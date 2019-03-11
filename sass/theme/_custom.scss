@@ -64,7 +64,7 @@
 
 $white:    #fff ;
 $gray-100: #fafafa ;
-$gray-200: #e9ecef ;
+$gray-200: #f9f9f9 ;
 $gray-300: #dee2e6 ;
 $gray-400: #ced4da ;
 $gray-500: #adb5bd ;
@@ -165,7 +165,7 @@ $yiq-text-light:            $white ;
 
 $enable-caret:                                true ;
 $enable-rounded:                              true ;
-$enable-shadows:                              false ;
+$enable-shadows:                              true ;
 $enable-gradients:                            false ;
 $enable-transitions:                          true ;
 $enable-prefers-reduced-motion-media-query:   true ;
@@ -402,8 +402,8 @@ $hr-margin-y:                 $spacer ;
 //
 // Customizes the `.table` component with basic values, each used across all table variations.
 
-$table-cell-padding:          .75rem ;
-$table-cell-padding-sm:       .3rem ;
+$table-cell-padding:          1rem ;
+$table-cell-padding-sm:       .5rem ;
 
 $table-color:                 $body-color ;
 $table-bg:                    null ;
@@ -481,10 +481,10 @@ $btn-padding-x-lg:            $input-btn-padding-x-lg ;
 $btn-font-size-lg:            $input-btn-font-size-lg ;
 $btn-line-height-lg:          $input-btn-line-height-lg ;
 
-$btn-border-width:            $input-btn-border-width ;
+$btn-border-width:            0 ;
 
 $btn-font-weight:             $font-weight-bold ;
-$btn-box-shadow:              inset 0 1px 0 rgba($white, .15), 0 1px 1px rgba($black, .075) ;
+$btn-box-shadow:              0 2px 2px 0 rgba($component-active-bg,.14), 0 3px 1px -2px rgba($component-active-bg,.2), 0 1px 5px 0 rgba($component-active-bg,.12) ;
 $btn-focus-width:             $input-btn-focus-width ;
 $btn-focus-box-shadow:        $input-btn-focus-box-shadow ;
 $btn-disabled-opacity:        .65 ;
@@ -495,9 +495,9 @@ $btn-link-disabled-color:     $gray-600 ;
 $btn-block-spacing-y:         .5rem ;
 
 // Allows for customizing button radius independently from global border radius
-$btn-border-radius:           $border-radius ;
-$btn-border-radius-lg:        $border-radius-lg ;
-$btn-border-radius-sm:        $border-radius-sm ;
+$btn-border-radius:           2rem ;
+$btn-border-radius-lg:        4rem ;
+$btn-border-radius-sm:        1rem ;
 
 $btn-transition:              color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out ;
 
@@ -509,7 +509,7 @@ $label-margin-bottom:                   .5rem ;
 $input-padding-y:                       $input-btn-padding-y ;
 $input-padding-x:                       $input-btn-padding-x ;
 $input-font-family:                     $input-btn-font-family ;
-$input-font-size:                       $input-btn-font-size ;
+$input-font-size:                       $input-btn-font-size-sm ;
 $input-font-weight:                     $font-weight-base ;
 $input-line-height:                     $input-btn-line-height ;
 
