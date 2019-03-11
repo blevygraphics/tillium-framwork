@@ -1,0 +1,70 @@
+.h-6{
+    height:100%;
+    padding-top: $spacer * 3;
+    padding-bottom: $spacer * 10;
+    background:url('https://images.unsplash.com/photo-1518066000714-58c45f1a2c0a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3c11bb4d0a0cb5cf4133b2aa4f929f14&auto=format&fit=crop&w=1500&q=80');
+    background-size: 95%;
+    // background-attachment: fixed;
+    // background-size:cover;
+    background-position:top left;
+    // background-size:60%;
+    background-repeat:no-repeat;
+    position:relative;
+    overflow:hidden;
+    // color:$white;
+}
+
+.h-6__container{
+    @include make-container();
+    position:relative;
+    z-index:2;
+}
+
+.h-6__sub-title{
+    color:theme-color('primary');
+    font-style: italic;
+    font-size:$font-size-sm;
+    margin-bottom:$spacer*1;
+    display:block;
+}
+
+.h-6__title{
+    @include make-col-ready();
+    @include make-col(11);
+    margin-bottom:$spacer * 2;
+    color:$white;
+    font-size:$font-size-base * 5;
+    position:relative;
+
+    &:before{
+        content:'02';
+        position:absolute;
+        font-size:$font-size-base * 9;
+        color:theme-color('primary');
+        left: -12rem;
+        top: -1rem;
+    }
+}
+
+.h-6__lead{
+    @include make-col-ready();
+    @include make-col(8);
+    font-size:$lead-font-size;
+    color:$white;
+}
+
+.h-6__content{
+    margin-top:$spacer*5;
+    margin-bottom:$spacer*5;
+    align-self:center;
+}
+
+.h-6__button{
+    @include make-button();
+    @include make-button-primary();
+    margin-top:$spacer*2;
+}
+
+.h-6__description{
+    font-size:$font-size-sm;
+}

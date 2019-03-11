@@ -1,0 +1,29 @@
+.c-3{
+    padding-top: $spacer * 10;
+    padding-bottom: $spacer * 10;
+}
+
+.c-3__row{
+    @include make-row();
+    justify-content: space-between;
+}
+
+.c-3__copy-wrap{
+    @include make-col-ready();
+    @include make-col(4);
+    align-self: center;
+    z-index:1;
+    text-align:center;
+    position:relative;
+
+    &:before{
+        content:'01';
+        position:absolute;
+        z-index:-1;
+        top:-7rem;
+        left:0;
+        right:0;
+        font-size:$font-size-base*10;
+        color:rgba(theme-color("dark"), .1);
+    }
+}

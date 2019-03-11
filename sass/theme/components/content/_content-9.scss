@@ -1,0 +1,41 @@
+.c-9{
+    padding-top: $spacer * 10;
+}
+
+.c-9__copy-wrap{
+    @include make-col-ready();
+    @include make-col(6);
+    margin:0 auto;
+    text-align:center;
+}
+
+.c-9__img-wrap{
+    @include make-col-ready();
+    @include make-col(8);
+    margin:0 auto;
+    position:relative;
+}
+
+.c-9__img{
+    width:100%;
+}
+
+.c-9__icon{
+    @include fa-icon();
+    font-size:$h1-font-size*2;
+    margin-bottom:$spacer*2;
+    transition:$transition-base;
+    position:absolute;
+    color:theme-color('primary');
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    &:before{
+        content:$fa-var-play-circle;
+    }
+    &:hover{
+        color:rgba(theme-color('primary'),.95);
+        // transform: scale(.95);
+        cursor:pointer;
+    }
+}

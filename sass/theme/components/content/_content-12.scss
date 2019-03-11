@@ -1,0 +1,22 @@
+.c-12{
+    padding-top: $spacer * 10;
+    padding-bottom: $spacer * 10;
+    background-color:theme-color('primary');
+    color:$white;
+}
+
+.c-12__copy-wrap{
+    @include make-col(6);
+    margin:0 auto;
+    text-align:center;
+    position:relative;
+    z-index:2;
+}
+
+.c-12__title{
+    color:$white;
+}
+
+.c-12__lead{
+    font-size:$lead-font-size;
+}

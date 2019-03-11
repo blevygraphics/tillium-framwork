@@ -1,0 +1,75 @@
+.h-7{
+    height:100%;
+    padding-top: $spacer * 3;
+    padding-bottom: $spacer * 10;
+    background:url('../img/hero-7-image.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat:no-repeat;
+    position:relative;
+    overflow:hidden;
+}
+
+.h-7__container{
+    @include make-container();
+    position:relative;
+    z-index:2;
+}
+
+.h-7__author{
+    color:$white;
+    font-size:$font-size-sm;
+    margin-bottom:$spacer*1;
+    display:block;
+}
+
+.h-7__title{
+    @include make-col-ready();
+    @include make-col(8);
+    margin-bottom:$spacer * 2;
+    color:$white;
+    font-size:$font-size-base * 5;
+    position:relative;
+    text-transform: uppercase;
+}
+
+.h-7__lead{
+    @include make-col-ready();
+    @include make-col(8);
+    font-size:$lead-font-size;
+    color:$white;
+}
+
+.h-7__content{
+    margin-top:$spacer*5;
+    margin-bottom:$spacer*5;
+    align-self:center;
+}
+
+.h-7__button{
+    @include make-button();
+    @include make-button-primary();
+    margin-top:$spacer*2;
+}
+
+.h-7__description{
+    font-size:$font-size-sm;
+}
+
+.h-7__post {
+    @include make-col-ready();
+    @include make-col(3);
+    padding-top: $spacer;
+    border-top: .125rem solid $white;
+    color: $white;
+}   
+
+.h-7__post-title {
+    font-size: $font-size-base;
+    display:block;
+} 
+
+.h-7__post-category {
+    font-size: $font-size-base * .75;
+    display:block;
+} 

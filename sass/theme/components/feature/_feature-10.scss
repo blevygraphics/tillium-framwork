@@ -1,0 +1,29 @@
+.f-10{
+    padding-top: $spacer * 5;
+    padding-bottom: $spacer * 5;
+}
+
+.f-10__lead{
+    font-size:$lead-font-size;
+}
+
+.f-10__copy-wrap{
+    @include make-col(6);
+    margin:0 auto;
+    text-align:center;
+    margin-bottom:$spacer*2;
+}
+
+.f-10__description{
+    font-size:$font-size-sm;
+}
+
+.f-10__copy-col{
+    @include make-col-ready();
+    @include make-col(4);
+    text-align:center;
+}
+
+.f-10__img {
+    border-radius: 100%;
+}

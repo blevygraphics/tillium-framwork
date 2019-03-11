@@ -1,0 +1,42 @@
+.f-7{
+    padding-top: $spacer * 5;
+    padding-bottom: $spacer * 5;
+}
+
+.f-7__lead{
+    font-size:$lead-font-size;
+}
+
+.f-7__copy-wrap{
+    @include make-col-ready();
+    @include make-col(8);
+    margin-bottom:$spacer*4;
+}
+
+.f-7__description{
+    font-size:$font-size-sm;
+}
+
+.f-7__cols{
+    @include make-col-ready();
+    @include make-col(6);
+    margin-bottom:$spacer*4;
+}
+
+.f-7__icon-col{
+    @include make-col-ready();
+    @include make-col(3);
+}
+
+.f-7__icon {
+    @include make-card();
+    color: theme-color('primary');
+    font-size: $font-size-base * 2;
+    padding:$spacer*2;
+    border-radius: 100%;
+}
+
+.f-7__copy-col{
+    @include make-col-ready();
+    @include make-col(7);
+}

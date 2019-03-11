@@ -1,0 +1,35 @@
+.f-11{
+    padding-top: $spacer * 5;
+    padding-bottom: $spacer * 5;
+}
+
+.f-11__lead{
+    font-size:$lead-font-size;
+}
+
+.row--justify{
+    justify-content: space-evenly;
+}
+
+.f-11__copy-wrap{
+    @include make-col(6);
+    margin:0 auto;
+    text-align:center;
+    margin-bottom:$spacer*2;
+}
+
+.f-11__description{
+    font-size:$font-size-sm;
+}
+
+.f-11__copy-col{
+    @include make-col-ready();
+    @include make-col(4);
+    text-align:center;
+}
+
+.f-11__icon {
+    color: theme-color('primary');
+    font-size: $font-size-base * 3;
+    padding-bottom:$spacer*2;
+}

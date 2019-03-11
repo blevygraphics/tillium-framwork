@@ -1,0 +1,41 @@
+.h-2{
+    padding-top: $spacer * 5;
+    padding-bottom: $spacer * 5;
+    height:100%;
+}
+
+.h-2__copy-wrap{
+    @include make-col-offset(1);
+    @include make-col-ready();
+    @include make-col(6);
+    align-self:center;
+}
+
+.h-2__lead{
+    font-size:$lead-font-size;
+    margin-bottom:$spacer*2;
+}
+
+.h-2__button{
+    @include make-button();
+}
+
+.h-2__button--secondary{
+    @include make-button-secondary();
+}
+
+.h-2__button--outline{
+    @include make-button-outline-primary();
+}
+
+.h-2__img-wrap{
+    @include make-col-ready();
+    @include make-col(5);
+    position:relative;
+    margin:0 auto;
+}
+
+.h-2__img{
+    margin:0 auto;
+    // width:100%;
+}

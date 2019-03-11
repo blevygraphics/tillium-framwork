@@ -1,0 +1,31 @@
+.c-17{
+    padding-top: $spacer * 5;
+    padding-bottom: $spacer * 5;
+}
+
+.c-17__lead{
+    font-size:$lead-font-size;
+}
+
+.c-17__img{
+    width:100%;
+    margin-bottom:$spacer*2;
+}
+
+.c-17__copy-wrap{
+    @include make-col(6);
+    margin:0 auto;
+    text-align:center;
+    margin-bottom:$spacer*2;
+}
+
+.c-17__heading{
+    font-size:$font-size-sm;
+    font-style:italic;
+    text-align:center;
+}
+
+.c-17__copy-col{
+    @include make-col-ready();
+    @include make-col(4);
+}

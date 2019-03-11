@@ -1,0 +1,32 @@
+.c-19{
+    padding-top: $spacer * 10;
+    padding-bottom: $spacer * 10;
+}
+
+.c-19__copy-wrap{
+    @include make-col-ready();
+    @include make-col(6);
+    align-self:center;
+}
+
+.c-19__lead{
+    font-size:$lead-font-size;
+    margin-bottom:$spacer*2;
+}
+
+.c-19__button{
+    @include make-button();
+    @include make-button-secondary();
+}
+
+.c-19__img-wrap{
+    @include make-col-offset(1);
+    @include make-col-ready();
+    @include make-col(5);
+    margin:0 auto;
+}
+
+.c-19__img{
+    margin:0 auto;
+    display:block;
+}

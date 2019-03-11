@@ -1,0 +1,43 @@
+.c-5{
+
+}
+
+.c-5__container{
+    @include make-row();
+    margin-left:0;
+    margin-right:0;
+}
+
+.c-5__half{
+    @include make-col-ready();
+    @include make-col(6);
+    align-self: center;
+}
+
+.c-5__half--img{
+    padding:0;
+}
+
+.c-5__img{
+    width:100%;
+    height:auto;
+}
+
+.c-5__content{
+    z-index:1;
+    text-align:center;
+    @include make-col(5);
+    margin:0 auto;
+    position:relative;
+
+    &:before{
+        content:'01';
+        position:absolute;
+        z-index:-1;
+        top:-7rem;
+        left:0;
+        right:0;
+        font-size:$font-size-base*10;
+        color:rgba(theme-color("dark"), .1);
+    }
+}

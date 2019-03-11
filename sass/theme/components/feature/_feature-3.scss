@@ -1,0 +1,18 @@
+.f-3{
+    padding-top: $spacer * 5;
+    padding-bottom: $spacer * 5;
+}
+
+.f-3__title{
+    color: theme-color('primary');
+    font-style: italic;
+}
+
+.f-3__description{
+    font-size:$font-size-sm;
+}
+
+.f-3__copy-col{
+    @include make-col-ready();
+    @include make-col(3);
+}

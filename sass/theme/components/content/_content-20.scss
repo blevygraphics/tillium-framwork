@@ -1,0 +1,42 @@
+.c-20{
+    padding-top: $spacer * 5;
+    padding-bottom: $spacer * 5;
+}
+
+.c-20__row{
+    @include make-row();
+}
+
+.c-20__img-wrap{
+    @include make-col-ready();
+    @include make-col(6);
+}
+
+.c-20__img{
+    width:100%;
+}
+
+.c-20__copy-wrap{
+    @include make-col-ready();
+    @include make-col-offset(1);
+    @include make-col(5);
+    align-self: center;
+}
+
+.c-20__sub-title{
+    color:theme-color('primary');
+    font-style: italic;
+    font-size:$font-size-sm;
+    margin-bottom:$spacer*1;
+    display:block;
+}
+
+.c-20__button{
+    @include make-button();
+    @include make-button-outline-primary();
+    margin-bottom:$spacer*2;
+}
+
+.c-20__logo{
+    display:block;
+}

@@ -1,0 +1,40 @@
+.c-23{
+    margin-top:$spacer*2;
+    margin-bottom:$spacer*2;
+}
+
+.c-23__container{
+    @include make-row();
+    margin-left:0;
+    margin-right:0;
+}
+
+.c-23__half{
+    @include make-col-ready();
+    @include make-col(6);
+    align-self: center;
+}
+
+.c-23__sub-title{
+    color:theme-color('primary');
+    font-style: italic;
+    font-size:$font-size-sm;
+    margin-bottom:$spacer*1;
+    display:block;
+}
+
+.c-23__half--img{
+    padding:0;
+}
+
+.c-23__img{
+    margin-top:$spacer;
+    width:100%;
+    height:auto;
+}
+
+.c-23__content{
+    @include make-col(8);
+    margin:0 auto;
+    position:relative;
+}

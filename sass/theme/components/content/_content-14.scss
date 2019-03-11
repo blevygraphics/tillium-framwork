@@ -1,0 +1,39 @@
+.c-14{
+
+}
+
+.c-14__container{
+    @include make-row();
+    margin-left:0;
+    margin-right:0;
+}
+
+.c-14__half{
+    @include make-col-ready();
+    @include make-col(6);
+    align-self: center;
+}
+
+.c-14__sub-title{
+    color:theme-color('primary');
+    font-style: italic;
+    font-size:$font-size-sm;
+    margin-bottom:$spacer*1;
+    display:block;
+}
+
+.c-14__half--img{
+    padding:0;
+}
+
+.c-14__img{
+    margin-top:$spacer;
+    width:100%;
+    height:auto;
+}
+
+.c-14__content{
+    @include make-col(8);
+    margin:0 auto;
+    position:relative;
+}

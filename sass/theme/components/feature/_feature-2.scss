@@ -1,0 +1,25 @@
+.f-2{
+    padding-top: $spacer * 5;
+    padding-bottom: $spacer * 5;
+}
+
+.f-2__lead{
+    font-size:$lead-font-size;
+}
+
+.f-2__copy-wrap{
+    @include make-col(6);
+    margin:0 auto;
+    text-align:center;
+    margin-bottom:$spacer*2;
+}
+
+.f-2__description{
+    font-size:$font-size-sm;
+}
+
+.f-2__copy-col{
+    @include make-col-ready();
+    @include make-col(4);
+    text-align:center;
+}

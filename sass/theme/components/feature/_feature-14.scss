@@ -1,0 +1,41 @@
+.f-14{
+    padding-top: $spacer * 5;
+    padding-bottom: $spacer * 5;
+}
+
+.f-14__lead{
+    font-size:$lead-font-size;
+}
+
+.f-14__intro-wrap{
+    @include make-col-ready();
+    @include make-col(5);
+}
+
+.f-14__copy-wrap{
+    @include make-col-offset(1);
+    @include make-col-ready();
+    @include make-col(6);
+    margin:0 auto;
+}
+
+.f-14__description{
+    font-size:$font-size-sm;
+}
+
+.f-14__copy-col{
+    @include make-col-ready();
+    @include make-col(6);
+}
+
+.f-14__icon {
+    color: theme-color('primary');
+    font-size: $font-size-base * 3;
+    padding-bottom:$spacer*2;
+}
+
+.f-14__button{
+    @include make-button();
+    @include make-button-primary();
+    margin: 0 auto;
+}

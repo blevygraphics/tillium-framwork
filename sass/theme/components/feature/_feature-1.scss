@@ -1,0 +1,13 @@
+.f-1{
+    padding-top: $spacer * 5;
+    padding-bottom: $spacer * 5;
+}
+
+.f-1__description{
+    font-size:$font-size-sm;
+}
+
+.f-1__copy-col{
+    @include make-col-ready();
+    @include make-col(4);
+}

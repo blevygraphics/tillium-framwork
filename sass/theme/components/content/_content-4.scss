@@ -1,0 +1,51 @@
+.c-4{
+
+}
+
+.c-4__container{
+    @include make-row();
+    margin-left:0;
+    margin-right:0;
+}
+
+.c-4__half{
+    @include make-col-ready();
+    @include make-col(6);
+    align-self: center;
+}
+
+.c-4__half--dark{
+    background-color:theme-color('primary');
+    color:$white;
+
+    .c-4__content::before{
+        color:rgba($white,.1);
+    }
+
+    .c-4__title{
+        color:$white;
+    }
+}
+
+.c-4__half--light{
+    
+}
+
+.c-4__content{
+    z-index:1;
+    text-align:center;
+    @include make-col(5);
+    margin:$spacer*15 auto;
+    position:relative;
+
+    &:before{
+        content:'01';
+        position:absolute;
+        z-index:-1;
+        top:-7rem;
+        left:0;
+        right:0;
+        font-size:$font-size-base*10;
+        color:rgba(theme-color("dark"), .1);
+    }
+}

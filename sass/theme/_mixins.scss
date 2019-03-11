@@ -1,0 +1,120 @@
+/* -------------------------------------------------------------------------- */
+
+// Button variants
+
+@mixin make-button() {
+  display: inline-block;
+  font-weight: $btn-font-weight;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  border: $btn-border-width solid transparent;
+  @include button-size($btn-padding-y, $btn-padding-x, $font-size-base, $btn-line-height, $btn-border-radius);
+  @include transition($btn-transition);
+
+  // Share hover and focus styles
+  @include hover-focus {
+    text-decoration: none;
+  }
+
+  &:focus,
+  &.focus {
+    outline: 0;
+    box-shadow: $btn-focus-box-shadow;
+  }
+
+  // Disabled comes first so active can properly restyle
+  &.disabled,
+  &:disabled {
+    opacity: $btn-disabled-opacity;
+    @include box-shadow(none);
+  }
+
+  // Opinionated: add "hand" cursor to non-disabled .btn elements
+  &:not(:disabled):not(.disabled) {
+    cursor: pointer;
+  }
+
+  &:not(:disabled):not(.disabled):active,
+  &:not(:disabled):not(.disabled).active {
+    background-image: none;
+    @include box-shadow($btn-active-box-shadow);
+
+    &:focus {
+      @include box-shadow($btn-focus-box-shadow, $btn-active-box-shadow);
+    }
+  }
+}
+
+
+
+@mixin button-variant($color, $background, $hover-color, $hover-background) {
+    color: $color;
+    background-color: $background;
+
+    &:focus,
+    &:hover,
+    &:active {
+        color: $hover-color;
+        background-color: $hover-background;
+    }
+}
+
+
+
+@mixin make-button-variant-primary() {
+  @include button-variant( #fff, $primary, #fff, darken($primary, 15%) );
+}
+@mixin make-button-primary() {
+  @include make-button;
+  @include make-button-variant-primary;
+  a{
+    color:$white;
+  }
+}
+@mixin make-button-variant-outline-primary() {
+  @include button-outline-variant($primary, darken($primary, 15%) )
+}
+@mixin make-button-outline-primary() {
+  @include make-button;
+  @include make-button-variant-outline-primary;
+  &:hover{
+    color:$white;
+  }
+}
+
+
+@mixin make-button-variant-secondary() {
+  @include button-variant( $white, $secondary, $white, darken($secondary, 15%) );
+}
+@mixin make-button-secondary() {
+  @include make-button;
+  @include make-button-variant-secondary;
+}
+
+@mixin make-button-variant-outline-secondary() {
+  @include button-outline-variant($secondary, darken($secondary, 15%) )
+}
+@mixin make-button-outline-secondary() {
+  @include make-button;
+  @include make-button-variant-outline-secondary;
+  &:hover{
+    color:$white;
+  }
+}
+
+@mixin make-button-variant-dark() {
+  @include button-variant( $white, $dark, $white, darken($dark, 15%) );
+}
+@mixin make-button-dark() {
+  @include make-button;
+  @include make-button-variant-dark;
+}
+
+@mixin make-card(){
+  @include box-shadow($box-shadow-lg);
+  background-color:$white;
+  padding:$spacer*4;
+  border-radius:$btn-border-radius;
+}

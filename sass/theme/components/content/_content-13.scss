@@ -1,0 +1,60 @@
+.c-13{
+    padding-top: $spacer * 10;
+    padding-bottom: $spacer * 10;
+}
+
+.c-13__copy-wrap{
+    @include make-col-ready();
+    @include make-col(5);
+    align-self:center;
+}
+
+.c-13__lead{
+    font-size:$lead-font-size;
+    margin-bottom:$spacer*2;
+}
+
+.c-13__button{
+    @include make-button();
+    @include make-button-primary();
+}
+
+.c-13__img-wrap{
+    @include make-col-ready();
+    @include make-col-offset(1);
+    @include make-col(6);
+    position:relative;
+}
+
+.c-13__img-mask{
+    border-radius:100%;
+    overflow:hidden;
+    width:25rem;
+    height:25rem;
+    align-self:center;
+    margin:0 auto;
+}
+
+.c-13__img{
+    width:100%;
+}
+
+.c-13__icon{
+    @include fa-icon();
+    font-size:$h1-font-size*2;
+    transition:$transition-base;
+    position:absolute;
+    color:theme-color('primary');
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    // transform: scale(1);
+    &:before{
+        content:$fa-var-play-circle;
+    }
+    &:hover{
+        color:rgba(theme-color('primary'),.95);
+        // transform: scale(.95);
+        cursor:pointer;
+    }
+}

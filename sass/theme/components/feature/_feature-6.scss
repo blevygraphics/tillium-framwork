@@ -1,0 +1,31 @@
+.f-6{
+    padding-top: $spacer * 5;
+    padding-bottom: $spacer * 5;
+}
+
+.f-6__lead{
+    font-size:$lead-font-size;
+}
+
+.f-6__copy-wrap{
+    @include make-col(6);
+    margin:0 auto;
+    text-align:center;
+    margin-bottom:$spacer*2;
+}
+
+.f-6__description{
+    font-size:$font-size-sm;
+}
+
+.f-6__copy-col{
+    @include make-col-ready();
+    @include make-col(4);
+    text-align:center;
+}
+
+.f-6__icon {
+    color: theme-color('primary');
+    font-size: $font-size-base * 3;
+    padding-bottom:$spacer*2;
+}
