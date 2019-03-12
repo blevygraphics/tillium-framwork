@@ -10,7 +10,8 @@
   vertical-align: middle;
   user-select: none;
   border: $btn-border-width solid transparent;
-  @include button-size($btn-padding-y, $btn-padding-x, $font-size-base, $btn-line-height, $btn-border-radius);
+  box-shadow: $btn-box-shadow;
+  @include button-size($btn-padding-y, $btn-padding-x, $font-size-sm, $btn-line-height, $btn-border-radius);
   @include transition($btn-transition);
 
   // Share hover and focus styles
@@ -65,7 +66,7 @@
 
 
 @mixin make-button-variant-primary() {
-  @include button-variant( #fff, $primary, #fff, darken($primary, 15%) );
+  @include button-variant( #fff, $primary, #fff, lighten($primary, 15%) );
 }
 @mixin make-button-primary() {
   @include make-button;
@@ -75,7 +76,7 @@
   }
 }
 @mixin make-button-variant-outline-primary() {
-  @include button-outline-variant($primary, darken($primary, 15%) )
+  @include button-outline-variant($primary, lighten($primary, 15%) )
 }
 @mixin make-button-outline-primary() {
   @include make-button;
@@ -87,7 +88,7 @@
 
 
 @mixin make-button-variant-secondary() {
-  @include button-variant( $white, $secondary, $white, darken($secondary, 15%) );
+  @include button-variant( $white, $secondary, $white, lighten($secondary, 15%) );
 }
 @mixin make-button-secondary() {
   @include make-button;
@@ -95,7 +96,7 @@
 }
 
 @mixin make-button-variant-outline-secondary() {
-  @include button-outline-variant($secondary, darken($secondary, 15%) )
+  @include button-outline-variant($secondary, lighten($secondary, 15%) )
 }
 @mixin make-button-outline-secondary() {
   @include make-button;
@@ -106,7 +107,7 @@
 }
 
 @mixin make-button-variant-dark() {
-  @include button-variant( $white, $dark, $white, darken($dark, 15%) );
+  @include button-variant( $white, $dark, $white, lighten($dark, 15%) );
 }
 @mixin make-button-dark() {
   @include make-button;

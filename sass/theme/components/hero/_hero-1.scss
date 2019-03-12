@@ -18,7 +18,7 @@
     @include make-col-ready();
     @include make-col(4);
     background-color:theme-color('primary');
-    background-image:url('https://source.unsplash.com/random/560x400');
+    background-image:url('https://placeimg.com/640/480/any');
     background-repeat:no-repeat;
     background-size:cover;
     background-position:right;
@@ -36,9 +36,9 @@
 }
 
 .h-1__content{
-    @include make-col-offset(2);
+    @include make-col-offset(1);
     @include make-col-ready();
-    @include make-col(8);
+    @include make-col(9);
     margin:0 auto;
     // align-self:center;
     padding:$spacer*5 0 0;
