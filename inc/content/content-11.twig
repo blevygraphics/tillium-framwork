@@ -1,0 +1,26 @@
+{% set img = TimberImage( theme.link ~ '/assets/img/iphone-mockup.png') %}
+
+<section class="c-11">
+    <div class="container">
+        <div class="row">
+            <div class="c-11__copy-wrap">
+                <h2>This is Content C-11</h2>
+                <p class="c-11__lead">At half-past eight the door opened, the policeman appeared, and, requesting them to follow him, led the way to an adjoining hall. </p>
+                <ul class="c-11__links">
+                    <li class="c-11__link">
+                        <a href="#">Featured Link</a>
+                    </li>
+                    <li class="c-11__link">
+                        <a href="#">Featured Link</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="c-11__img-wrap">
+                <i class="c-11__icon"></i>
+                <img class="c-11__img" src="{{ img.src}}"/>
+            </div>
+        </div>
+    </div>
+</section>
+
+{# This will need a lightbox soon #}

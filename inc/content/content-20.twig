@@ -1,0 +1,20 @@
+{% set img = TimberImage( theme.link ~ '/assets/img/a-g-logo.png') %}
+
+<section class="c-20">
+    <div class="container">
+        <div class="c-20__row">
+            <div class="c-20__img-wrap">
+                <img class="c-20__img" src="https://source.unsplash.com/random/560x400"/>
+            </div>
+            <div class="c-20__copy-wrap">
+                <span class="c-20__sub-title">This is a Sub Heading</span>
+                <h2>This is Content C-20</h2>
+                <p>At half-past eight the door opened, the policeman appeared, and, requesting them to follow him, led the way to an adjoining hall. </p>
+                <div class="c-20__button">
+                    <a hre="#">Learn More</a>
+                </div>
+                <img class="c-20__logo" src="{{ img.src|resize(262)}}"/>
+            </div>
+        </div>
+    </div>
+</section>

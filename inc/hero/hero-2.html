@@ -1,0 +1,18 @@
+{% set img = TimberImage( theme.link ~ '/assets/img/hero-2-image.png') %}
+
+{% include "menu.twig" with {'menu': menu.get_items} %}
+<section class="h-2">
+    <div class="container">
+        <div class="row">
+            <div class="h-2__img-wrap">
+                <img class="h-2__img" src="{{ img.src}}"/>
+            </div>
+            <div class="h-2__copy-wrap">
+                <h1>Base UI for Sketch</h1>
+                <p class="h-2__lead">At half-past eight the door opened, the policeman appeared, and, requesting them to follow him, led the way to an adjoining hall. </p>
+                <a href="#" class="h-2__button h-2__button--secondary">Learn More</a>
+                <a href="#" class="h-2__button h-2__button--outline">Learn More</a>
+            </div>
+        </div>
+    </div>
+</section>

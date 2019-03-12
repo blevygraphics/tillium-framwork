@@ -1,0 +1,27 @@
+{% set img = TimberImage( theme.link ~ '/assets/img/ipad-landscape.png') %}
+{% include "menu.twig" with {'menu': menu.get_items} %}
+
+<section class="h-4">
+    <div class="container">
+        <div class="row">
+            <div class="h-4__copy-wrap">
+                <h1>All-in-one design workflow</h1>
+                <p class="h-4__lead">At half-past eight the door opened, the policeman appeared, and, requesting them to follow him, led the way to an adjoining hall. </p>
+                <form class="h-4__form">
+                    <div class="h-4__input">
+                        <label for="inputPassword2" class="sr-only">Password</label>
+                        <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+                    </div>
+                    <button type="submit" class="h-4__button">Submit</button>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="h-4__img-wrap">
+                <img class="h-4__img" src="{{ img.src}}"/>
+            </div>
+        </div>
+    </div>
+</section>
+
+{# This will need a lightbox soon #}
