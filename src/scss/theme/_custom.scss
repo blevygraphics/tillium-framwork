@@ -1179,3 +1179,9 @@ $positions: static, relative, absolute, fixed, sticky ;
 
 $print-page-size:                   a3 ;
 $print-body-min-width:              map-get($grid-breakpoints, "lg") ;
+
+
+
+// Custom Additions
+
+$border--base : $border-width solid $border-color;

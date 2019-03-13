@@ -1842,7 +1842,7 @@ h6,.h6{font-size:1rem}
 .display-3{font-size:5.0646972656rem}
 .display-2{font-size:6.330871582rem}
 .display-1{font-size:7.9135894775rem}
-@font-face{font-family:'FontAwesome';src:url("../../fonts/fontawesome-webfont.eot?v=4.7.0");src:url("../../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0") format("embedded-opentype"),url("../../fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2"),url("../../fonts/fontawesome-webfont.woff?v=4.7.0") format("woff"),url("../../fonts/fontawesome-webfont.ttf?v=4.7.0") format("truetype"),url("../../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg");font-weight:normal;font-style:normal}
+@font-face{font-family:'FontAwesome';src:url("../../src/fonts/fontawesome-webfont.eot?v=4.7.0");src:url("../../src/fonts/fontawesome-webfont.eot?#iefix&v=4.7.0") format("embedded-opentype"),url("../../src/fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2"),url("../../src/fonts/fontawesome-webfont.woff?v=4.7.0") format("woff"),url("../../src/fonts/fontawesome-webfont.ttf?v=4.7.0") format("truetype"),url("../../src/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg");font-weight:normal;font-style:normal}
 .c-1{padding-top:5rem;padding-bottom:5rem}
 .c-1__row{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-right:-15px;margin-left:-15px}
 .c-1__img-wrap{position:relative;width:100%;padding-right:15px;padding-left:15px;-webkit-box-flex:0;-webkit-flex:0 0 50%;-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%}
@@ -2165,6 +2165,14 @@ h6,.h6{font-size:1rem}
 .f-15__icon{color:#b73790;font-size:3rem;padding-bottom:2rem;display:block}
 .f-15__number{color:#b73790;border:.0625rem solid #dee2e6;text-align:center;padding:.5rem;border-radius:100%;display:inline-block;width:2.5rem;height:2.5rem;background-color:#fff;margin-bottom:2rem}
 .f-15__number:before{content:'';position:absolute;z-index:-1;left:0;top:38%;background-color:#dee2e6;width:100%;height:.0625rem}
+.f-16{padding-top:5rem;padding-bottom:5rem}
+.f-16__intro-wrap{position:relative;width:100%;padding-right:15px;padding-left:15px;-webkit-box-flex:0;-webkit-flex:0 0 100%;-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%;text-align:center;margin-bottom:4rem}
+.f-16__copy-wrap{position:relative;width:100%;padding-right:15px;padding-left:15px;-webkit-box-flex:0;-webkit-flex:0 0 100%;-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%;margin:0 auto}
+.f-16__description{font-size:.75rem}
+.f-16__copy-col{position:relative;width:100%;padding-right:15px;padding-left:15px;-webkit-box-flex:0;-webkit-flex:0 0 50%;-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%;padding:4rem;position:relative}
+.f-16__copy-col:before{content:'';position:absolute;height:1px;width:95%;bottom:0;left:2.5%;right:2.5%;background-color:#dee2e6}
+.f-16__copy-col:nth-child(odd):after{content:'';position:absolute;width:1px;height:95%;top:2.5%;bottom:2.5%;right:0;background-color:#dee2e6}
+.f-16__icon{color:#dee2e6;font-size:3rem;padding-bottom:2rem}
 .h-1{height:100%}
 .h-1__container{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-right:-15px;margin-left:-15px;margin-left:0;margin-right:0}
 .h-1__col{position:relative;width:100%;padding-right:15px;padding-left:15px}
