@@ -49,7 +49,10 @@ var styleDestination        = 'dist/css'; // Path to place the compiled CSS file
 
 // JS Vendor related.
 var jsVendorSRC             = ['node_modules/jquery/dist/jquery.js',
-                               'node_modules/bootstrap/dist/js/bootstrap.bundle.min.js' ]; // Path to JS vendor folder.
+                               'node_modules/bootstrap/dist/js/bootstrap.bundle.min.js',
+                               'node_modules/scrollmagic/scrollmagic/minified/ScrollMagic.min.js',
+                               'node_modules/scrollmagic/scrollmagic/minified/plugins/animation.gsap.min.js'
+                              ]; // Path to JS vendor folder.
 var jsVendorDestination     = 'src/js'; // Path to place the compiled JS vendors file.
 var jsVendorFile            = 'vendor'; // Compiled JS vendors file name.
 // Default set to vendors i.e. vendors.js.

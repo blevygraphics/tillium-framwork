@@ -25,14 +25,17 @@
 
 .f-7__icon-col{
     @include make-col-ready();
-    @include make-col(3);
+    @include make-col(2);
 }
 
 .f-7__icon {
     @include make-card();
     color: theme-color('primary');
     font-size: $font-size-base * 2;
-    padding:$spacer*2;
+    padding:$spacer*2.5;
+    line-height:.5;
+    width:6rem;
+    height:6rem;
     border-radius: 100%;
 }
 

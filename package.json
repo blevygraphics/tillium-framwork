@@ -26,6 +26,7 @@
     "browser-sync": "^2.26.3",
     "del": "^3.0.0",
     "font-awesome": "^4.7.0",
+    "gsap": "^2.1.2",
     "gulp": "3.9.1",
     "gulp-autoprefixer": "6.0.0",
     "gulp-clean-css": "^4.0.0",
@@ -51,6 +52,7 @@
     "npm": "^6.9.0",
     "popper.js": "^1.14.7",
     "run-sequence": "^2.2.1",
+    "scrollmagic": "^2.0.6",
     "undescores-for-npm": "^1.0.0"
   }
 }

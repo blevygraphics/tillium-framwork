@@ -30,7 +30,7 @@
     font-size:$h1-font-size*2;
     transition:$transition-base;
     position:absolute;
-    color:theme-color('primary');
+    color:theme-color('light');
     left:50%;
     top:50%;
     transform: translate(-50%, -50%);
@@ -39,7 +39,7 @@
         content:$fa-var-play-circle;
     }
     &:hover{
-        color:rgba(theme-color('primary'),.95);
+        color:rgba(theme-color('light'),.95);
         // transform: scale(.95);
         cursor:pointer;
     }
