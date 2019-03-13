@@ -10,10 +10,11 @@
 
 .f-5__copy-wrap{
     @include make-col-ready();
-    @include make-col(8);
+    @include make-col(6);
 }
 
 .f-5__img-wrap{
+    @include make-col-offset(1);
     @include make-col-ready();
     @include make-col(4);
     position:relative;

@@ -46,6 +46,7 @@
         left:0;
         right:0;
         font-size:$font-size-base*10;
-        color:rgba(theme-color("dark"), .1);
+        font-weight: $font-weight-bold;
+        color:rgba(theme-color("dark"), .05);
     }
 }

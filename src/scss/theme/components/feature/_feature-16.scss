@@ -58,4 +58,19 @@
     color: $gray-300;
     font-size: $font-size-base * 3;
     padding-bottom:$spacer*2;
+
+    &--corner {
+        position: absolute;
+        bottom:2rem;
+        right: 2rem;
+        border: $border--base;
+        border-radius: 100%;
+        padding:$spacer/1.9;
+        color: $gray-300;
+        height: 1.5rem;
+        width:1.5rem;
+        line-height: .5;
+        font-size: $font-size-sm;
+        font-weight: $font-weight-normal;
+    }
 }

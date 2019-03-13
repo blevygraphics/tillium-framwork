@@ -2,8 +2,9 @@
     height:100%;
     padding-top: $spacer * 3;
     padding-bottom: $spacer * 10;
-    background:url('https://placeimg.com/640/480/any');
-    background-size: 95%;
+    // background:url('../img/illustrated-hero.png');
+    background-color: theme-color('info');
+    background-size: cover;
     // background-attachment: fixed;
     // background-size:cover;
     background-position:top left;
@@ -21,7 +22,7 @@
 }
 
 .h-6__sub-title{
-    color:theme-color('primary');
+    color:theme-color('light');
     font-style: italic;
     font-size:$font-size-sm;
     margin-bottom:$spacer*1;
@@ -29,34 +30,36 @@
 }
 
 .h-6__title{
-    @include make-col-ready();
-    @include make-col(11);
     margin-bottom:$spacer * 2;
     color:$white;
     font-size:$font-size-base * 5;
     position:relative;
-
-    &:before{
-        content:'02';
-        position:absolute;
-        font-size:$font-size-base * 9;
-        color:theme-color('primary');
-        left: -12rem;
-        top: -1rem;
-    }
 }
 
 .h-6__lead{
-    @include make-col-ready();
-    @include make-col(8);
     font-size:$lead-font-size;
     color:$white;
 }
 
 .h-6__content{
+    @include make-col-ready();
+    @include make-col(11);
     margin-top:$spacer*5;
     margin-bottom:$spacer*5;
     align-self:center;
+    z-index:1;
+    position:relative;
+    &:before{
+        content:'02';
+        position:absolute;
+        font-size:$font-size-base * 9;
+        color:theme-color('primary');
+        opacity: .5;
+        left: -5rem;
+        top: -5rem;
+        z-index: 0;
+        font-weight: $font-weight-bold;
+    }
 }
 
 .h-6__button{

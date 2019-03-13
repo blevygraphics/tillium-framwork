@@ -250,7 +250,7 @@ $grid-breakpoints: (
   sm: 576px,
   md: 768px,
   lg: 992px,
-  xl: 1200px
+  xl: 1400px
 ) ;
 
 @include _assert-ascending($grid-breakpoints, "$grid-breakpoints");
@@ -265,7 +265,7 @@ $container-max-widths: (
   sm: 540px,
   md: 720px,
   lg: 960px,
-  xl: 1200px
+  xl: 1400px
 );
 
 @include _assert-ascending($container-max-widths, "$container-max-widths");
@@ -481,7 +481,7 @@ $btn-padding-x-lg:            $input-btn-padding-x-lg ;
 $btn-font-size-lg:            $input-btn-font-size-lg ;
 $btn-line-height-lg:          $input-btn-line-height-lg ;
 
-$btn-border-width:            0 ;
+$btn-border-width:            $input-btn-border-width ;
 
 $btn-font-weight:             $font-weight-bold ;
 $btn-box-shadow:              0 2px 2px 0 rgba($component-active-bg,.14), 0 3px 1px -2px rgba($component-active-bg,.2), 0 1px 5px 0 rgba($component-active-bg,.12) ;
@@ -1185,3 +1185,4 @@ $print-body-min-width:              map-get($grid-breakpoints, "lg") ;
 // Custom Additions
 
 $border--base : $border-width solid $border-color;
+$jumbo-font-size : $font-size-base * 4;

@@ -2,7 +2,7 @@
     height:100%;
     padding-top: $spacer * 3;
     padding-bottom: $spacer * 3;
-    background:url('https://placeimg.com/640/480/any');
+    background:url('../img/illustrated-hero.png');
     background-attachment: fixed;
     background-size:cover;
     background-repeat:no-repeat;
@@ -13,7 +13,7 @@
 }
 
 .h-5__overlay{
-    background-color:rgba(theme-color('secondary'),.5);
+    background-color:rgba(theme-color('info'),.9);
     height:100%;
     width:100%;
     position:absolute;

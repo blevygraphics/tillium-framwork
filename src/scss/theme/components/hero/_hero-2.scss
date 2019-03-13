@@ -33,6 +33,7 @@
     @include make-col(5);
     position:relative;
     margin:0 auto;
+    overflow:hidden;
 }
 
 .h-2__img{

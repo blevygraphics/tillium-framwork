@@ -1,9 +1,10 @@
 .c-24{
     padding-top: $spacer * 10;
     padding-bottom: $spacer * 10;
-    background:url('../../assets/img/c-24-bg.jpg');
+    background:url('../img/c-24-bg.jpg');
     background-size:cover;
     background-repeat:no-repeat;
+    background-attachment: fixed;
     overflow:hidden;
 }
 
