@@ -18,11 +18,19 @@
 .h-1__col--right{
     @include make-col-ready();
     @include make-col(4);
-    background-color:theme-color('primary');
-    background:url('../img/illustrated-hero.png');
+    // background-color:theme-color('primary');
+    padding:0;
+    overflow:hidden;
+}
+
+.h-1__bg {
+    background-image:url('../img/illustrated-hero.png');
     background-repeat:no-repeat;
-    background-size:cover;
-    background-position:right;
+    background-position:top;
+    width:auto;
+    height:200%;
+    position:relative;
+    top:-80%;
 }
 
 .h-1__title{

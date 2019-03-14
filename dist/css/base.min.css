@@ -2195,7 +2195,8 @@ h6,.h6{font-size:1rem}
 .h-1{height:100%}
 .h-1__container{padding-left:0;margin-right:0}
 .h-1__col{position:relative;width:100%;padding-right:15px;padding-left:15px}
-.h-1__col--right{position:relative;width:100%;padding-right:15px;padding-left:15px;-webkit-box-flex:0;-webkit-flex:0 0 33.3333333333%;-ms-flex:0 0 33.3333333333%;flex:0 0 33.3333333333%;max-width:33.3333333333%;background-color:#b73790;background:url("../img/illustrated-hero.png");background-repeat:no-repeat;background-size:cover;background-position:right}
+.h-1__col--right{position:relative;width:100%;padding-right:15px;padding-left:15px;-webkit-box-flex:0;-webkit-flex:0 0 33.3333333333%;-ms-flex:0 0 33.3333333333%;flex:0 0 33.3333333333%;max-width:33.3333333333%;padding:0;overflow:hidden}
+.h-1__bg{background-image:url("../img/illustrated-hero.png");background-repeat:no-repeat;background-position:top;width:auto;height:200%;position:relative;top:-80%}
 .h-1__title{margin-bottom:2rem}
 .h-1__col--left{position:relative;width:100%;padding-right:15px;padding-left:15px;-webkit-box-flex:0;-webkit-flex:0 0 66.6666666667%;-ms-flex:0 0 66.6666666667%;flex:0 0 66.6666666667%;max-width:66.6666666667%;background-color:#fff}
 .h-1__content{position:relative;width:100%;padding-right:15px;padding-left:15px;-webkit-box-flex:0;-webkit-flex:0 0 75%;-ms-flex:0 0 75%;flex:0 0 75%;max-width:75%;padding:5rem 0 0}
