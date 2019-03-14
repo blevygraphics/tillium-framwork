@@ -50,6 +50,7 @@ var styleDestination        = 'dist/css'; // Path to place the compiled CSS file
 // JS Vendor related.
 var jsVendorSRC             = ['node_modules/jquery/dist/jquery.js',
                                'node_modules/bootstrap/dist/js/bootstrap.bundle.min.js',
+                               'node_modules/gsap/src/minified/TweenMax.min.js',
                                'node_modules/scrollmagic/scrollmagic/minified/ScrollMagic.min.js',
                                'node_modules/scrollmagic/scrollmagic/minified/plugins/animation.gsap.min.js'
                               ]; // Path to JS vendor folder.
@@ -256,7 +257,7 @@ gulp.task( 'vendorJS', function() {
 *
 * Watches for file changes and runs specific tasks.
 */
-gulp.task( 'watch', ['sass'], function () {
+gulp.task( 'watch', ['sass','customJS'], function () {
 	gulp.watch( styleWatchFiles, [ 'sass' ] ); // Reload on SCSS file changes.
-	// gulp.watch( vendorJSWatchFiles, [ 'customJS', reload ] ); // Reload on scripts file changes.
+	gulp.watch( vendorJSWatchFiles, [ 'customJS' ] ); // Reload on scripts file changes.
 });

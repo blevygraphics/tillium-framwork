@@ -14,10 +14,10 @@ var controller = new ScrollMagic.Controller();
 // build scene
 var scene = 
     new ScrollMagic.Scene({
-        triggerElement: "section"
+        triggerElement: "section[data-animate='true']"
     })
-    .setTween("[data-animate='fadeIn'", 0.5, {
-        backgroundColor: "green", scale: 2.5}
+    .setTween(".js-animate", 0.5, {
+        color: "green", scale: 2.5}
     ) // trigger a TweenMax.to tween
     .addTo(controller);
  
