@@ -22,15 +22,14 @@ $(function () {
 //     .addTo(controller);
 
 
-// init controller
-var parallaxCtrl = new ScrollMagic.Controller();
 
-// build scenes
-$('.parallaxParent').each(function() {
-    new ScrollMagic.Scene({triggerElement: this})
-                .setTween('.parallax', {y: "80%", ease: Power2.EaseInOut})
-                .addTo(parallaxCtrl);
-});
+
+// // build scenes
+// $('.parallaxParent').each(function() {
+//     new ScrollMagic.Scene({triggerElement: this})
+//                 .setTween('.parallax', {y: "80%", ease: Power2.EaseInOut})
+//                 .addTo(controller);
+// });
 
 
 // init controller
@@ -45,9 +44,27 @@ $('.fade-in').each(function() {
   // build a scene
   var scene = new ScrollMagic.Scene({
     triggerElement: this,
-    offset: 0
+    offset: -300
   })
   .setTween(tween) // trigger a TweenMax.fromTo tween
   .addTo(controller);
   
 });
+
+// get all slides
+var slides = ["#parallax-h1", "#parallax-h2", "#parallax-h4", "#parallax-h8"];
+
+// SCENE 4 - parallax effect on each of the slides with bcg
+// move bcg container when slide gets into the view
+slides.forEach(function (slide, index) {
+
+  var $bcg = $(slide).find('.parallax');
+
+  var slideParallaxScene = new ScrollMagic.Scene({
+        triggerElement: slide, 
+        triggerHook: 1,
+        duration: "300%"
+    })
+    .setTween($bcg, 1, {y: '80%', ease:Power0.easeNone})
+    .addTo(controller);
+  });

@@ -46,8 +46,16 @@
     @include make-col(12);
     margin:0 auto;
     position:relative;
+    overflow: hidden;
 }
 
-.h-4__img{
-    width:100%;
+.h-4__bg{
+    background-image:url('../img/illustrated-hero.png');
+    background-repeat:no-repeat;
+    background-position:top;
+    background-size: cover;
+    width:auto;
+    height:100%;
+    position:relative;
+    top:-40%;
 }

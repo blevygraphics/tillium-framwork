@@ -34,9 +34,16 @@
     position:relative;
     margin:0 auto;
     overflow:hidden;
+    height:100vh;
 }
 
-.h-2__img{
-    margin:0 auto;
-    // width:100%;
+.h-2__bg{
+    background-image:url('../img/illustrated-hero.png');
+    background-repeat:no-repeat;
+    background-position:top;
+    background-size: cover;
+    width:auto;
+    height:100%;
+    position:relative;
+    top:-40%;
 }
